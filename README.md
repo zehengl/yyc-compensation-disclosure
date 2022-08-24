@@ -6,6 +6,8 @@
 
 ![coding_style](https://img.shields.io/badge/code%20style-black-000000.svg)
 
+A Streamlit app to visualize City of Calgary's compensation disclosure
+
 ## Get started
 
     python -m venv .venv
