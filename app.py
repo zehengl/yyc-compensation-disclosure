@@ -8,7 +8,14 @@ import streamlit as st
 from plotly.subplots import make_subplots
 
 st.set_page_config(page_title="yyc-compensation-disclosure", page_icon="random")
+_, center, _ = st.columns([2, 1, 2])
+with center:
+    st.image(
+        "https://cdn0.iconfinder.com/data/icons/business-startup-10/50/44-512.png",
+        use_column_width=True,
+    )
 st.title("YYC Compensation Disclosure")
+st.caption("A Streamlit app to visualize City of Calgary's compensation disclosure")
 
 
 @st.cache
@@ -58,7 +65,8 @@ def rate_hist(df, col):
             row=index // n_cols + 1,
             col=index % n_cols + 1,
         )
-    fig.update_layout(height=800, title=col, showlegend=False)
+    title = " ".join([w.capitalize() for w in col.split("_")])
+    fig.update_layout(height=800, title=title, showlegend=False)
     return fig
 
 
