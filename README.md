@@ -21,3 +21,4 @@ It will install `pylint` and `black` to enable linting and auto-formatting.
 ## Credits
 
 - [Logo](https://www.iconfinder.com/icons/5027838/dollar_management_money_icon) by [Candy Design](https://www.iconfinder.com/Candy_Design)
+- [Compensation Disclosure List](https://data.calgary.ca/Government/Compensation-Disclosure-List/9bze-mzx6)
