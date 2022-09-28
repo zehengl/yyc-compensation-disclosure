@@ -1,11 +1,14 @@
 import math
+import re
 
+import matplotlib.pyplot as plt
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 import requests
 import streamlit as st
 from plotly.subplots import make_subplots
+from wordcloud import WordCloud
 
 st.set_page_config(page_title="yyc-compensation-disclosure", page_icon="random")
 _, center, _ = st.columns([2, 1, 2])
@@ -76,3 +79,12 @@ fig
 
 fig = rate_hist(df, "maximum_annual_base_rate")
 fig
+
+st.subheader("Wordcloud")
+titles = df["position_title"].unique()
+titles = [re.sub(r"\(.*?\)", "", t) for t in titles]
+titles = ",".join(titles)
+wc = WordCloud().generate(titles)
+plt.imshow(wc, interpolation="bilinear")
+plt.axis("off")
+st.pyplot(plt.gcf())
