@@ -8,10 +8,10 @@
 
 A Streamlit app to visualize City of Calgary's compensation disclosure
 
-## Get started
+## Getting Started
 
     python -m venv .venv
-    .\.venv\Scripts\activate
+    .venv\Scripts\activate
     pip install -r requirements.txt
     streamlit run app.py
 
