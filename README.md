@@ -13,7 +13,7 @@ A Streamlit app to visualize City of Calgary's compensation disclosure
     python -m venv .venv
     .venv\Scripts\activate
     pip install -r requirements.txt
-    streamlit run app.py
+    streamlit run streamlit_app.py
 
 Use `pip install -r requirements-dev.txt` for development.
 It will install `pylint` and `black` to enable linting and auto-formatting.
