@@ -10,7 +10,7 @@ import streamlit as st
 from plotly.subplots import make_subplots
 from wordcloud import WordCloud
 
-st.set_page_config(page_title="yyc-compensation-disclosure", page_icon="random")
+st.set_page_config(page_title="yyc-compensation-disclosure", page_icon=":moneybag:")
 _, center, _ = st.columns([2, 1, 2])
 with center:
     st.image(
