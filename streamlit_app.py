@@ -21,7 +21,7 @@ st.title("YYC Compensation Disclosure")
 st.caption("A Streamlit app to visualize City of Calgary's compensation disclosure")
 
 
-@st.cache
+@st.cache_data
 def load_df():
     yyc_data_url = "https://data.calgary.ca/resource/9bze-mzx6.json?$limit=50000"
     response = requests.get(yyc_data_url)
