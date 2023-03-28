@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="https://cdn0.iconfinder.com/data/icons/business-startup-10/50/44-512.png" alt="logo" height="196">
+    <img src="https://cdn0.iconfinder.com/data/icons/business-startup-10/50/44-512.png" alt="logo" height="128">
 </div>
 
 # yyc-compensation-disclosure
@@ -16,7 +16,6 @@ A Streamlit app to visualize City of Calgary's compensation disclosure
     streamlit run streamlit_app.py
 
 Use `pip install -r requirements-dev.txt` for development.
-It will install `pylint` and `black` to enable linting and auto-formatting.
 
 ## Credits
 
