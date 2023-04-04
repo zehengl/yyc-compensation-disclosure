@@ -15,7 +15,7 @@ A Streamlit app to visualize City of Calgary's compensation disclosure
     pip install -r requirements.txt
     streamlit run streamlit_app.py
 
-Use `pip install -r requirements-dev.txt` for development.
+> Use `pip install -r requirements-dev.txt` for development.
 
 ## Credits
 
