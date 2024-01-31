@@ -69,7 +69,7 @@ def rate_hist(df, col):
             col=index % n_cols + 1,
         )
     title = " ".join([w.capitalize() for w in col.split("_")])
-    fig.update_layout(height=800, title=title, showlegend=False)
+    fig.update_layout(height=200 * n_rows, title=title, showlegend=False)
     return fig
 
 
@@ -80,11 +80,11 @@ fig
 fig = rate_hist(df, "maximum_annual_base_rate")
 fig
 
-st.subheader("Wordcloud")
+st.subheader("Word Cloud")
 titles = df["position_title"].unique()
 titles = [re.sub(r"\(.*?\)", "", t) for t in titles]
 titles = ",".join(titles)
-wc = WordCloud().generate(titles)
+wc = WordCloud(background_color="white").generate(titles)
 plt.imshow(wc, interpolation="bilinear")
 plt.axis("off")
 st.pyplot(plt.gcf())
