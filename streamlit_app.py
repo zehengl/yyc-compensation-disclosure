@@ -11,12 +11,6 @@ from plotly.subplots import make_subplots
 from wordcloud import WordCloud
 
 st.set_page_config(page_title="yyc-compensation-disclosure", page_icon=":moneybag:")
-_, center, _ = st.columns([2, 1, 2])
-with center:
-    st.image(
-        "https://cdn0.iconfinder.com/data/icons/business-startup-10/50/44-512.png",
-        use_column_width=True,
-    )
 st.title("YYC Compensation Disclosure")
 st.caption("A Streamlit app to visualize City of Calgary's compensation disclosure")
 
